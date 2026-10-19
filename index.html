@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8f5ef">
+<title>عبد الرحمن & ريم | دعوة زفاف</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@400;500;600&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain"></div>
+<header class="topbar">
+  <a class="brand" href="#home">A <span>♥</span> R</a>
+  <nav><a href="#details" data-ar="التفاصيل" data-en="DETAILS">التفاصيل</a><a href="#countdown" data-ar="العدّ التنازلي" data-en="COUNTDOWN">العدّ التنازلي</a></nav>
+  <button id="languageToggle" class="language-toggle" type="button">EN / عربي</button>
+</header>
+
+<section id="welcomeScreen" class="welcome-screen">
+  <div class="welcome-frame">
+    <div class="sparkle s1">✧</div><div class="sparkle s2">✦</div>
+    <p class="welcome-small" data-ar="بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ" data-en="WITH LOVE AND GRATITUDE">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ</p>
+    <div class="welcome-emblem">♥</div>
+    <p class="welcome-kicker" data-ar="يسعدنا دعوتكم لحضور زفاف" data-en="YOU ARE INVITED TO THE WEDDING OF">يسعدنا دعوتكم لحضور زفاف</p>
+    <h1><span data-ar="عبد الرحمن" data-en="Abdulrahman">عبد الرحمن</span><i>&</i><span data-ar="ريم" data-en="Reem">ريم</span></h1>
+    <p class="welcome-quote" data-ar="قد رُزقتُ حبَّها" data-en="Blessed with her love">قد رُزقتُ حبَّها</p>
+    <button id="openInvitation" class="open-button" type="button"><span data-ar="افتح دعوتنا" data-en="OPEN INVITATION">افتح دعوتنا</span><b>↓</b></button>
+    <p class="welcome-foot" data-ar="حضوركم يشرفنا وتكتمل فرحتنا بكم" data-en="Your presence will make our joy complete">حضوركم يشرفنا وتكتمل فرحتنا بكم</p>
+  </div>
+</section>
+
+<main id="invitationContent" class="invitation-content" hidden>
+  <section class="hero section" id="home">
+    <p class="eyebrow reveal" data-ar="دعوة لحضور حفل زفاف" data-en="A WEDDING INVITATION">دعوة لحضور حفل زفاف</p>
+    <div class="monogram reveal">A <span>♥</span> R</div>
+    <h2 class="couple-names reveal"><span data-ar="عبد الرحمن" data-en="Abdulrahman">عبد الرحمن</span><b>&</b><span data-ar="ريم" data-en="Reem">ريم</span></h2>
+    <p class="hero-quote reveal" data-ar="قد رُزقتُ حبَّها" data-en="Blessed with her love">قد رُزقتُ حبَّها</p>
+    <p class="hero-subtitle reveal" data-ar="حضوركم يشرفنا وتكتمل فرحتنا بكم" data-en="Your presence will make our joy complete">حضوركم يشرفنا وتكتمل فرحتنا بكم</p>
+    <div class="hero-date reveal"><span class="line"></span><span id="heroDate">الأربعاء، 21 أكتوبر 2026</span><span class="line"></span></div>
+  </section>
+
+  <section class="section countdown-section" id="countdown">
+    <div class="section-heading reveal"><span class="small-label" data-ar="ننتظر هذه اللحظة الجميلة" data-en="COUNTING DOWN TO OUR DAY">ننتظر هذه اللحظة الجميلة</span><h2 data-ar="كم بقي على فرحتنا؟" data-en="The countdown to our day">كم بقي على فرحتنا؟</h2></div>
+    <div class="countdown-card reveal">
+      <div class="countdown">
+        <div class="time-unit"><strong id="days">--</strong><span data-ar="يوم" data-en="DAYS">يوم</span></div>
+        <div class="time-unit"><strong id="hours">--</strong><span data-ar="ساعة" data-en="HOURS">ساعة</span></div>
+        <div class="time-unit"><strong id="minutes">--</strong><span data-ar="دقيقة" data-en="MINUTES">دقيقة</span></div>
+        <div class="time-unit"><strong id="seconds">--</strong><span data-ar="ثانية" data-en="SECONDS">ثانية</span></div>
+      </div>
+      <p id="countdownNote" data-ar="كل لحظة تقرّبنا من فرحتنا." data-en="Every moment brings us closer.">كل لحظة تقرّبنا من فرحتنا.</p>
+    </div>
+  </section>
+
+  <section class="section details-section" id="details">
+    <div class="section-heading reveal"><span class="small-label" data-ar="يسعدنا وصولكم" data-en="WE LOOK FORWARD TO SEEING YOU">يسعدنا وصولكم</span><h2 data-ar="تفاصيل المناسبة" data-en="Wedding details">تفاصيل المناسبة</h2></div>
+    <div class="details-grid">
+      <article class="detail-card reveal"><div class="detail-icon">✧</div><span class="detail-label" data-ar="التاريخ" data-en="DATE">التاريخ</span><h3 id="weekday">الأربعاء</h3><p id="eventDate">21 أكتوبر 2026</p></article>
+      <article class="detail-card reveal"><div class="detail-icon">◷</div><span class="detail-label" data-ar="الوقت" data-en="TIME">الوقت</span><h3 id="eventTime">الخامسة مساءً</h3><p data-ar="ننتظركم بكل محبة" data-en="We look forward to welcoming you">ننتظركم بكل محبة</p></article>
+      <article class="detail-card reveal"><div class="detail-icon">⌖</div><span class="detail-label" data-ar="القاعة والعنوان" data-en="VENUE & ADDRESS">القاعة والعنوان</span><h3 id="venueName">صالة لمسة ذهبية</h3><p id="venueAddress">شارع الوحدة — مقابل مطعم بالميرا</p></article>
+    </div>
+  </section>
+
+  <section class="closing section">
+    <div class="ornament">✧</div>
+    <p class="blessing reveal" data-ar="اللهم بارك لهما وبارك عليهما واجمع بينهما في خير" data-en="May Allah bless them, bestow blessings upon them, and unite them in goodness.">اللهم بارك لهما وبارك عليهما واجمع بينهما في خير</p>
+    <div class="closing-line"></div>
+    <p class="special-phrase reveal" data-ar="جنة الأطفال منازلهم" data-en="Children are happiest in their own homes">جنة الأطفال منازلهم</p>
+    <p class="no-photos reveal" data-ar="ممنوع التصوير بالجوال" data-en="Mobile phone photography is prohibited">ممنوع التصوير بالجوال</p>
+    <p class="closing-thanks reveal" data-ar="شكرًا لمشاركتكم فرحتنا" data-en="Thank you for sharing our joy">شكرًا لمشاركتكم فرحتنا</p>
+  </section>
+  <footer><span class="footer-heart">♥</span><span>DEVELOPED BY MOHAMMED KH ALJABRY</span></footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
